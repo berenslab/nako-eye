@@ -1,0 +1,10 @@
+[project]
+name = "nako-eye"
+version = "0.1.0"
+description = """Repository for the paper <<The German National Cohort
+ Ophthalmology Dataset: Design, Methods, Baseline Profile and Potential 
+ for AI-based Eye Research>>"""
+requires-python = ">=3.12"
+
+[tool.ruff.lint.per-file-ignores]
+"*.ipynb" = ["E402"]

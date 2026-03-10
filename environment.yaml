@@ -1,0 +1,28 @@
+name: nako
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12
+  - r-base=4.5.1
+  - rpy2
+  - r-essentials
+  - numpy # To install numpy with old system gcc (gber2)
+  - pip
+  - pip:
+    - torch==2.6.0
+    - torchvision==0.21.0
+    - opencv-python
+    - pillow
+    - cairosvg
+    - scikit-learn
+    - scipy
+    - pandas
+    - matplotlib
+    - seaborn
+    - glasbey
+    - fundus_image_toolbox
+    - statsmodels
+
+# conda remove --name nako --all
+# conda env create -f environment.yml
