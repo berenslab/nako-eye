@@ -11,7 +11,7 @@ from PIL import Image
 from torch.utils.data import DataLoader, Dataset
 from tqdm import tqdm
 
-import utils.nako as nako
+from utils import nako
 
 
 def get_args():

@@ -11,8 +11,8 @@ from torch.optim import AdamW
 from torch.utils.data import DataLoader
 from tqdm import tqdm
 
-import models.models as models
-import utils.nako as nako
+from models import models
+from utils import nako
 
 
 def get_args():

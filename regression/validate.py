@@ -8,9 +8,9 @@ import torch
 from sklearn.metrics import mean_absolute_error, r2_score
 from torch.utils.data import DataLoader
 
-import models.models as models
-import regression.train as reg
-import utils.nako as nako
+from models import models
+from regression.train import predict
+from utils import nako
 
 
 def get_args():
@@ -155,7 +155,7 @@ if __name__ == '__main__':
         print(f'Dead layer count (max(abs(parameters) <= 1e-4 ) = {dead_layer_count}')
 
         # Inference on val set
-        preds_val, targets_val, embeddings_val = reg.predict(
+        preds_val, targets_val, embeddings_val = predict(
             model, dataloader_val, args.device
         )
 

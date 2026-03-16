@@ -8,9 +8,9 @@ import torch
 from sklearn.metrics import accuracy_score, roc_auc_score
 from torch.utils.data import DataLoader
 
-import classification.train as clf
-import models.models as models
-import utils.nako as nako
+from classification.train import predict
+from models import models
+from utils import nako
 
 
 def get_args():
@@ -138,7 +138,7 @@ if __name__ == '__main__':
         print(f'Dead layer count (max(abs(parameters) <= 1e-4 ) = {dead_layer_count}')
 
         # Inference on val set
-        preds_val, probs_val, targets_val, _ = clf.predict(
+        preds_val, probs_val, targets_val, _ = predict(
             model, dataloader_val, args.device
         )
 

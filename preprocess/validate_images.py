@@ -6,7 +6,7 @@ import os
 import numpy as np
 from PIL import Image
 
-import utils.nako as nako
+from utils import nako
 
 
 def get_args():
@@ -39,7 +39,7 @@ def get_corrupted_files(image_dir):
 
             # Check image is not truncated
             Image.open(image_file).load()
-        except (IOError, SyntaxError, OSError) as e:
+        except (IOError, SyntaxError, OSError):
             corrupted.append(image_file)
 
     return corrupted
