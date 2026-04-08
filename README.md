@@ -1,5 +1,6 @@
 # NAKO Ophthalmology Dataset
-This repository contains the code for the paper "The German National Cohort Ophthalmology Dataset: Design Methods, Baseline Profile and Potential for AI-based Eye Research".
+This repository contains the code for the paper "The German National Cohort: Ophthalmological Assessment, Baseline Profile 
+and Potential for AI-based Eye Research".
 
 ### Installation
 A conda environment file is included to install the R and python packages used in this project.
