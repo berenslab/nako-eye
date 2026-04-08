@@ -45,7 +45,7 @@ All architectures can be trained with ImageNet initialization or from scratch.
 |:----------------------------:	|:----:	|
 | resnet18, resnet50           	| CNN  	|
 | inceptionv3                  	| CNN  	|
-| efficientnetv2               	| CNN  	|
+| efficientnetv2_s             	| CNN  	|
 | xception                     	| CNN  	|
 | vit_base_patch16_224         	| ViT  	|
 | swin_base_patch4_window7_224 	| Swin 	|
