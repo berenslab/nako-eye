@@ -10,8 +10,8 @@ IMAGENET_NORMALIZATION = {'mean': [0.485, 0.456, 0.406], 'std': [0.229, 0.224, 0
 MODEL_DICT = {
     'inceptionv3': 'inception_v3',
     'efficientnetv2': 'efficientnet_v2_s',
-    'vit': 'vit_base_patch16_224',
-    'swin': 'swin_base_patch4_window7_224',
+    'vit': 'vit_small_patch16_224',
+    'swin': 'swin_tiny_patch4_window7_224',
 }
 
 
