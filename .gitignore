@@ -178,4 +178,5 @@ checkpoints/
 plots/
 quality_results/
 orientation_results/
+quality_study/
 *.pt
