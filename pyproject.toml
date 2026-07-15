@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nako-eye"
+version = "0.1.0"
+description = """Repository for the paper <<The German National Cohort
+ Ophthalmology Dataset: Design, Methods, Baseline Profile and Potential
+ for AI-based Eye Research>>"""
+requires-python = ">=3.12"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff.lint.per-file-ignores]
+"*.ipynb" = ["E402"]
