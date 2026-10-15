@@ -18,7 +18,7 @@ _FIG_WIDTHS = dict(
     full=6.27,  # Full width in word
     slide_col=5.67,  # Half powerpoint slide
     slide_full=11.5,  # Full powerpoint slide
-    poster=14.46,  # Full poster width
+    poster=16.5,  # Half-width panel on an A0 portrait poster (33.1in wide, minus margins)
 )
 
 
